@@ -1,7 +1,10 @@
 package co.edu.unbosque.model;
 
-public class Mascota {
-    
+import java.io.Serializable;
+
+public class Mascota implements Serializable {
+
+    private static final long serialVersionUID = 1L;
     private String nombre;
     private int edad;
 
@@ -28,7 +31,7 @@ public class Mascota {
 
     @Override
     public String toString() {
-        return "Nombre: " + nombre + " -> edad: " + edad;
+        return "Nombre= " + nombre + ", edad= " + edad;
     }
-  
+
 }
